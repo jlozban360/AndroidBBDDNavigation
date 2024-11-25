@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/inicioFragment"
+            android:icon="@drawable/hogar"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/matriculaAlumnoFragment"
+            android:icon="@drawable/agregar_usuario"
+            android:title="@string/name_matricula_alumno" />
+        <item
+            android:id="@+id/modificaFragment"
+            android:icon="@drawable/boton_editar"
+            android:title="@string/modificar_alumno" />
+        <item
+            android:id="@+id/borrarFragment"
+            android:icon="@drawable/eliminar_usuario"
+            android:title="@string/borrar_alumno" />
+        <item
+            android:title="@string/listados"
+            android:enabled="false" />
+        <item
+            android:id="@+id/listarFragment"
+            android:icon="@drawable/portapapeles"
+            android:title="@string/listar_alumnos" />
+    </group>
+</menu>

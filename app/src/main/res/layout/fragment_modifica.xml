@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/modificaFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ModificaFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/buttonCancelar_modifica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/black"
+            android:text="@string/button_cancelar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <TextView
+            android:id="@+id/textViewModifica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/modificaci_n_de_un_alumno"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextDNI_modifica"
+            android:layout_width="258dp"
+            android:layout_height="78dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="@string/introduce_el_dni"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewModifica" />
+
+        <EditText
+            android:id="@+id/editTextNombre_modifica"
+            android:layout_width="257dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="@string/introduce_el_nombre"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextDNI_modifica" />
+
+        <EditText
+            android:id="@+id/editTextApellidos_modifica"
+            android:layout_width="258dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="@string/introduce_los_apellidos"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNombre_modifica" />
+
+        <Button
+            android:id="@+id/buttonMatricular_modifica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="70dp"
+            android:backgroundTint="@color/black"
+            android:text="@string/button_modificar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="145dp"
+            android:layout_height="99dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextApellidos_modifica">
+
+            <RadioButton
+                android:id="@+id/radioButtonMasculino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masculino" />
+
+            <RadioButton
+                android:id="@+id/radioButtonFemenino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Femenino" />
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/inicioFragment">
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.iesoretania.bbddnavigation.Fragments.InicioFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_inicio" />
+    <fragment
+        android:id="@+id/matriculaAlumnoFragment"
+        android:name="com.iesoretania.bbddnavigation.Fragments.MatriculaAlumnoFragment"
+        android:label="Matricular Alumno"
+        tools:layout="@layout/fragment_matricula_alumno">
+        <action
+            android:id="@+id/action_matriculaAlumnoFragment_to_inicioFragment"
+            app:destination="@id/inicioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/borrarFragment"
+        android:name="com.iesoretania.bbddnavigation.Fragments.BorrarFragment"
+        android:label="Borrar Alumno"
+        tools:layout="@layout/fragment_borrar">
+        <action
+            android:id="@+id/action_borrarFragment_to_inicioFragment"
+            app:destination="@id/inicioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/modificaFragment"
+        android:name="com.iesoretania.bbddnavigation.Fragments.ModificaFragment"
+        android:label="Modificar Alumno"
+        tools:layout="@layout/fragment_modifica">
+        <action
+            android:id="@+id/action_modificaFragment_to_inicioFragment"
+            app:destination="@id/inicioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listarFragment"
+        android:name="com.iesoretania.bbddnavigation.Fragments.ListarFragment"
+        android:label="Listado de Alumnos"
+        tools:layout="@layout/fragment_listar" />
+</navigation>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.MatriculaAlumnoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textViewDescripcion"
+                    android:layout_width="360dp"
+                    android:layout_height="282dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="@string/example_text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinnerSexo" />
+
+                <Button
+                    android:id="@+id/buttonMatricular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="70dp"
+                    android:backgroundTint="@color/black"
+                    android:text="@string/button_matricular"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinnerSexo" />
+
+                <Button
+                    android:id="@+id/buttonCancelar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/black"
+                    android:text="@string/button_cancelar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinnerSexo" />
+
+                <Spinner
+                    android:id="@+id/spinnerSexo"
+                    android:layout_width="194dp"
+                    android:layout_height="59dp"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextApellidos" />
+
+                <EditText
+                    android:id="@+id/editTextApellidos"
+                    android:layout_width="258dp"
+                    android:layout_height="64dp"
+                    android:layout_marginTop="30dp"
+                    android:ems="10"
+                    android:hint="@string/introduce_los_apellidos"
+                    android:inputType="text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextNombre" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="237dp"
+                    android:layout_height="228dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/conferencia"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.574"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewMatricula"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/matricula_de_un_nuevo_alumno"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+                <EditText
+                    android:id="@+id/editTextNombre"
+                    android:layout_width="257dp"
+                    android:layout_height="74dp"
+                    android:layout_marginTop="30dp"
+                    android:ems="10"
+                    android:hint="@string/introduce_el_nombre"
+                    android:inputType="text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextDNI" />
+
+                <EditText
+                    android:id="@+id/editTextDNI"
+                    android:layout_width="258dp"
+                    android:layout_height="78dp"
+                    android:layout_marginTop="30dp"
+                    android:ems="10"
+                    android:hint="@string/introduce_el_dni"
+                    android:inputType="text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewMatricula" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
